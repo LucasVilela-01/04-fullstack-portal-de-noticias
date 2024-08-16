@@ -4,4 +4,18 @@
     object-fit: cover;
     border-radius: 4px;
   }
+
+  .card {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden; /* usamos para a imagem não transbordar (overflow) e hidden (esconda) tudo que passe do limite da caixa */
+
+    &::before { /* seria a mesma coisa se fizéssemos o .card::before */
+      content: "";
+      position: absolute;
+      inset: 0;
+      top: 50%;
+      background: linear-gradient(180deg, transparent 0%, #020617 100%);
+    }
+  }
 }
