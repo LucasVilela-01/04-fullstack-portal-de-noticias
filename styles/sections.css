@@ -24,6 +24,10 @@
 
       padding: 24px;
 
+      &:has(.text-lg) { /* essa função serve para olhar se dentro de uma tag tem uma determinada classe, caso sim, aplique as propriedades definidas dentro das chaves */
+        padding: 12px;
+      }
+
       h2 {
         margin-top: 8px;
       }
